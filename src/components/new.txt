@@ -1,0 +1,152 @@
+capstone
+
+import React from 'react';
+
+export default function Capstone() {
+  return (
+    <section id="capstone">
+      <h2>Capstone Projects</h2>
+      <p>Add interdisciplinary project examples here (AI + IoT, Cyber Threat Detection, etc.)</p>
+    </section>
+  );
+}
+
+footer
+import React from 'react';
+
+export default function Footer() {
+  return (
+    <footer>
+      <p>© {new Date().getFullYear()} JNTU-GV | Certification Course</p>
+    </footer>
+  );
+}
+
+
+
+
+hero
+import React from 'react';
+import banner from '../assets/banner.png';
+
+export default function Hero() {
+  return (
+    <section className="hero" id="hero">
+      <img src={banner} alt="Course Banner" className="hero-img" />
+      <div className="hero-content">
+        <h1>CERTIFICATION IN EMERGING TECHNOLOGIES</h1>
+        <p>AI, ML, IoT, Cybersecurity, Quantum | Duration: 3 Months | Hybrid Mode</p>
+        <a href="https://forms.gle/8B8hWybHvdhUNmtt9" target="_blank" rel="noreferrer">
+          <button>Register Now</button>
+        </a>
+      </div>
+    </section>
+  );
+}
+modules
+import React from 'react';
+
+export default function Modules() {
+  return (
+    <section id="modules">
+      <h2>Modules Covered</h2>
+      <p>Add module cards here (AI, ML, IoT, Cybersecurity, Quantum)</p>
+    </section>
+  );
+}
+navbar
+import React from 'react';
+import { Link } from 'react-scroll';
+
+export default function Navbar() {
+  return (
+    <header className="navbar">
+      <div className="logo">JNTU-GV</div>
+      <nav>
+        <ul>
+          <li><Link to="hero" smooth={true} offset={-80}>Home</Link></li>
+          <li><Link to="overview" smooth={true} offset={-80}>Overview</Link></li>
+          <li><Link to="weekplan" smooth={true} offset={-80}>Plan</Link></li>
+          <li><Link to="modules" smooth={true} offset={-80}>Modules</Link></li>
+          <li><Link to="practicals" smooth={true} offset={-80}>Practicals</Link></li>
+          <li><Link to="capstone" smooth={true} offset={-80}>Capstone</Link></li>
+          <li><Link to="references" smooth={true} offset={-80}>References</Link></li>
+          <li><Link to="registration" smooth={true} offset={-80}>Register</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+over view
+import React from 'react';
+
+export default function Overview() {
+  return (
+    <section id="overview">
+      <h2>Course Overview</h2>
+      <p>This 3-month hybrid course includes 120 sessions on AI, ML, IoT, Cybersecurity, and Quantum Computing with hands-on projects and certification from JNTU-GV.</p>
+      <p><strong>Eligibility:</strong> Open to all graduates (B.Tech, B.A, B.Com, etc.)</p>
+    </section>
+  );
+}
+
+practicals
+import React from 'react';
+
+export default function Practicals() {
+  return (
+    <section id="practicals">
+      <h2>Practicals</h2>
+      <p>Add list of hands-on projects here (chatbots, CNNs, IoT dashboards, etc.)</p>
+    </section>
+  );
+}
+
+references
+import React from 'react';
+
+export default function References() {
+  return (
+    <section id="references">
+      <h2>Recommended References</h2>
+      <p>List of textbooks and online tools used in the course (Qiskit, TensorFlow, OpenAI, etc.)</p>
+    </section>
+  );
+}regisration
+import React from 'react';
+
+export default function Registration() {
+  return (
+    <section id="registration">
+      <h2>Registration</h2>
+      <p><strong>Fee:</strong> ₹25,000 | ₹20,000 for Women/SC/ST</p>
+      <p><strong>Mode:</strong> Hybrid (Online + Campus Labs)</p>
+      <p><strong>Contact:</strong> skill.develop@jntugv.edu.in</p>
+      <a href="https://forms.gle/8B8hWybHvdhUNmtt9" target="_blank" rel="noreferrer">
+        <button>Register Now</button>
+      </a>
+    </section>
+  );
+}
+
+week plan
+
+import React from 'react';
+
+export default function WeekPlan() {
+  return (
+    <section id="weekplan">
+      <h2>Weekly Plan</h2>
+      <ul>
+        <li>Week 1-2: AI & Tools</li>
+        <li>Week 3-4: Machine Learning & Deep Learning</li>
+        <li>Week 5-6: IoT</li>
+        <li>Week 7-8: Cyber Security</li>
+        <li>Week 9-10: Quantum Computing</li>
+        <li>Week 11-12: Capstone Project + Final Assessment</li>
+      </ul>
+    </section>
+  );
+}
+
+
