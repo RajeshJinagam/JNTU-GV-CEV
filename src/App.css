@@ -98,13 +98,17 @@ button:hover {
   position: relative;
   text-align: center;
   color: white;
-  background-color: #004080;
-  padding: 50px 20px;
+  background-image: url('./assets/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
   border-radius: 20px;
+  min-height: 400px;
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.304);
+  background: rgba(0, 0, 0, 0.457);
   display: inline-block;
   padding: 40px;
   border-radius: 8px;
@@ -139,20 +143,21 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.top-ribbon {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 1px;
-  flex-wrap: wrap;
+@media (max-width: 768px) {
+  .top-ribbon {
+    flex-direction: column;
+    text-align: center;
+    background-color: #eaecee;
+    color: #004080;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
 }
 
 .jntu-logo {
@@ -164,6 +169,8 @@ a {
 .university-name {
   flex: 1;
   text-align: center;
+  font-size: 25px;
+  padding: 5px 10px;
 }
 
 .bottom-ribbon {
@@ -205,16 +212,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 768px) {
-  .top-ribbon {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .university-name {
-    font-size: 16px;
-    padding: 5px 10px;
-  }
 
   .navbar-links ul {
     flex-direction: column;
@@ -235,23 +233,23 @@ a {
 }
 
 .top-ribbon {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
+  background-color: white;
+  color: #004080;
+  padding: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   letter-spacing: 1px;
   flex-wrap: nowrap;
 }
 
 .jntu-logo {
-  height: 40px;
-  width: auto;
+  height: 70px;
+  width: 70px;
   object-fit: contain;
 }
 
@@ -338,4 +336,18 @@ a {
   }
 }
 
+.download-btn {
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #003060;
+}
 

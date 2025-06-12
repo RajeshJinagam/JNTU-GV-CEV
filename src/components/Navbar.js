@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="top-ribbon">
         <img src={logo} alt="JNTU-GV Logo" className="jntu-logo" />
         <div className="university-name">
-          JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY - GURAJADA VIZIANAGARAM COLLEGE OF ENGINEERING VIZIANAGARAM
+          JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY - GURAJADA VIZIANAGARAM 
         </div>
       </div>
 
@@ -25,7 +25,8 @@ export default function Navbar() {
             <li><Link to="capstone" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Capstone</Link></li>
             <li><Link to="references" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">References</Link></li>
             <li><Link to="contact" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Contact</Link></li>
-            <li><Link to="registration" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Register</Link></li>
+            <li><Link to="download" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Download</Link></li>
+            <li><Link to="registration" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Registration</Link></li>
           </ul>
         </nav>
       </div>

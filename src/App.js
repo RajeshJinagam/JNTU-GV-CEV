@@ -10,6 +10,7 @@ import References from './components/References.js';
 import Contact from './components/Contact.js';
 import Registration from './components/Registration.js';
 import Footer from './components/Footer.js';
+import Download from './components/Download.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Capstone />
       <References />
       <Contact/>
+      <Download/>
       <Registration />
       <Footer />
     </div>

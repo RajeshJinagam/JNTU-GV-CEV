@@ -1,17 +1,109 @@
-capstone
-
 import React from 'react';
 
 export default function Capstone() {
+  const projects = [
+    "Smart Health Prediction System – ML model + IoT vitals data",
+    "AI Chatbot with Sentiment Analysis – NLP + DL integration",
+    "Autonomous Irrigation System – Predict crop water needs (IoT + ML)",
+    "Cyber Threat Detection – Network log classification using ML",
+    "Quantum-Enhanced Classifier – Compare classical vs quantum ML",
+    "Emotion Detection from Images – CNN-based DL model",
+    "Stock Price Prediction – LSTM with time-series data",
+    "Fake News Detection – NLP + Classification pipeline",
+    "E-commerce Recommender System – Collaborative filtering using ML",
+    "Disease Diagnosis Assistant – ML + Raspberry Pi health sensors"
+  ];
+
   return (
+    <div className="section-container">
     <section id="capstone">
       <h2>Capstone Projects</h2>
-      <p>Add interdisciplinary project examples here (AI + IoT, Cyber Threat Detection, etc.)</p>
+      <p>Students will work in interdisciplinary teams to develop innovative real-world applications integrating AI, ML, IoT, Cybersecurity, and Quantum Computing.</p>
+      <h3>Project Use Cases</h3>
+      <ul>
+        {projects.map((proj, index) => (
+          <li key={index}>{proj}</li>
+        ))}
+      </ul>
+      <h3>Assessment Criteria</h3>
+      <ul>
+        <li>Project Development & Presentation – <strong>30%</strong></li>
+        <li>Final MCQ Exam – <strong>30%</strong></li>
+        <li>Assignments & Quizzes – <strong>40%</strong></li>
+      </ul>
+    </section>
+    </div>
+  );
+}
+
+
+export default function Contact() {
+  return (
+    <div className="section-container">
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>
+        📧 Email: <a href="mailto:skill.develop@jntugv.edu.in">skill.develop@jntugv.edu.in</a><br />
+        🌐 Website: <a href="http://www.jntugv.edu.in" target="_blank" rel="noreferrer">www.jntugv.edu.in</a><br />
+        📍 Location: Jawaharlal Nehru Technological University - Gurajada, Vizianagaram Campus<br />
+        💬 For any queries regarding registration, curriculum, or lab sessions, please feel free to reach out.
+      </p>
+    </section>
+    </div>
+  );
+}
+
+
+
+import React from 'react';
+export default function CourseOutline() {
+  return (
+    <section id="overview">
+      <div className="section-container">
+          <h2>Course Overview</h2>
+          <p>
+            This 3-month certification course covers five major domains in emerging technologies:
+            Artificial Intelligence & Tools, Machine Learning & Deep Learning, Internet of Things,
+            Cyber Security, and Quantum Computing. The course includes 120 sessions with 10 sessions
+            per week and focuses on both theoretical knowledge and hands-on experience.
+          </p>
+          <h3>Weekly Subject Plan</h3>
+          <ul>
+            <li><strong>Week 1–2:</strong> Artificial Intelligence & Tools</li>
+            <li><strong>Week 3–4:</strong> Machine Learning & Deep Learning</li>
+            <li><strong>Week 5–6:</strong> Internet of Things (IoT)</li>
+            <li><strong>Week 7–8:</strong> Cyber Security</li>
+            <li><strong>Week 9–10:</strong> Quantum Computing</li>
+            <li><strong>Week 11–12:</strong> Capstone Project & Final Assessment</li>
+          </ul>
+        </div>
     </section>
   );
 }
 
-footer
+
+
+import React from 'react';
+import brochure from '../assets/Download.pdf';
+
+export default function Download() {
+  return(
+    <div className="section-container">
+    <section id="download" data-aos="fade-up">
+      <h2>Course Brochure</h2>
+      <p>
+        Click below to download the official course brochure in PDF format.
+      </p>
+      <a href={brochure} download className="download-btn">Download PDF</a>
+      <div className="section-image">
+        <img src={require('../assets/images.jpg')} alt="AI Tools" />
+      </div>
+    </section>
+    </div>
+  );
+}
+
+
 import React from 'react';
 
 export default function Footer() {
@@ -22,20 +114,18 @@ export default function Footer() {
   );
 }
 
-
-
-
-hero
 import React from 'react';
-import banner from '../assets/banner.png';
 
 export default function Hero() {
   return (
     <section className="hero" id="hero">
-      <img src={banner} alt="Course Banner" className="hero-img" />
       <div className="hero-content">
         <h1>CERTIFICATION IN EMERGING TECHNOLOGIES</h1>
+        <p>Offered by JNTU-GV, Vizianagaram</p>
         <p>AI, ML, IoT, Cybersecurity, Quantum | Duration: 3 Months | Hybrid Mode</p>
+        <p><strong>Fee:</strong> ₹25,000 | ₹20,000 for Women/SC/ST</p>
+        <p><strong>Installment Option:</strong> Fee can be paid in two installments</p>
+        
         <a href="https://forms.gle/8B8hWybHvdhUNmtt9" target="_blank" rel="noreferrer">
           <button>Register Now</button>
         </a>
@@ -43,93 +133,265 @@ export default function Hero() {
     </section>
   );
 }
-modules
+
+
+
 import React from 'react';
 
 export default function Modules() {
+  const moduleData = [
+    {
+      title: "Artificial Intelligence & Tools",
+      weeks: "Weeks 1 (4 Sessions)",
+      topics: [
+        "Introduction to AI & Historical Evolution",
+        "Intelligent Applications Today",
+        "Ethics in AI"
+      ]
+    },
+    {
+      title: "Machine Learning & Deep Learning",
+      weeks: "Weeks 2–3 (20 Sessions)",
+      topics: [
+        "Types of Learning: Supervised, Unsupervised, Reinforcement",
+        "Classification and Clustering Algorithms",
+        "Neural Networks, CNNs, RNNs, LSTM",
+        "Tools: TensorFlow, Keras, PyTorch, Scikit-learn",
+        "Practicals: Image classification, Sentiment analysis"
+      ]
+    },
+    {
+      title: "Artificial Intelligence Tools",
+      weeks: "Weeks 3–4 (16 Sessions)",
+      topics: [
+        "Intelligent Systems & Search Techniques",
+        "Natural Language Processing (NLP): Text Classification, Chatbots",
+        "AI Tools: OpenAI, IBM Watson, Google AI, Microsoft Azure AI",
+        "Practicals: Chatbot development, NLP tasks"
+      ]
+    },
+    {
+      title: "Internet of Things (IoT)",
+      weeks: "Weeks 5–6 (20 Sessions)",
+      topics: [
+        "IoT Architecture and Protocol Stack",
+        "Sensors, Actuators, and Communication Protocols",
+        "IoT Platforms: Arduino, Raspberry Pi",
+        "Applications: Smart Home, Healthcare, Agriculture",
+        "Practicals: Smart irrigation system, MQTT cloud communication"
+      ]
+    },
+    {
+      title: "Cyber Security",
+      weeks: "Weeks 7–8 (20 Sessions)",
+      topics: [
+        "Cybersecurity Principles and Threat Landscape",
+        "Cryptography: Hashing, Encryption, Digital Signatures",
+        "Network Security: Firewalls, VPNs",
+        "Security Tools: Wireshark, Metasploit, Burp Suite",
+        "Practicals: Packet sniffing, Secure login, SQLi demonstration"
+      ]
+    },
+    {
+      title: "Quantum Computing",
+      weeks: "Weeks 9–10 (20 Sessions)",
+      topics: [
+        "Classical vs Quantum Computing, Qubits, Superposition",
+        "Quantum Gates and Circuits",
+        "Quantum Algorithms: Grover’s, Shor’s",
+        "Quantum Programming with Qiskit, IBM Q",
+        "Practicals: Quantum circuit simulation, IBMQ backend execution"
+      ]
+    }
+  ];
+
   return (
+    <div className="section-container">
     <section id="modules">
       <h2>Modules Covered</h2>
-      <p>Add module cards here (AI, ML, IoT, Cybersecurity, Quantum)</p>
+      {moduleData.map((module, index) => (
+        <div className="module" key={index} style={{ marginBottom: '40px' }}>
+          <h3>{module.title}</h3>
+          <p><strong>{module.weeks}</strong></p>
+          <ul>
+            {module.topics.map((topic, i) => (
+              <li key={i}>{topic}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
+    </div>
   );
 }
-navbar
+
+
+// File: src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-scroll';
+import logo from '../assets/images.jpg';
 
 export default function Navbar() {
   return (
-    <header className="navbar">
-      <div className="logo">JNTU-GV</div>
-      <nav>
-        <ul>
-          <li><Link to="hero" smooth={true} offset={-80}>Home</Link></li>
-          <li><Link to="overview" smooth={true} offset={-80}>Overview</Link></li>
-          <li><Link to="weekplan" smooth={true} offset={-80}>Plan</Link></li>
-          <li><Link to="modules" smooth={true} offset={-80}>Modules</Link></li>
-          <li><Link to="practicals" smooth={true} offset={-80}>Practicals</Link></li>
-          <li><Link to="capstone" smooth={true} offset={-80}>Capstone</Link></li>
-          <li><Link to="references" smooth={true} offset={-80}>References</Link></li>
-          <li><Link to="registration" smooth={true} offset={-80}>Register</Link></li>
-        </ul>
-      </nav>
+    <header className="navbar-fixed">
+      {/* Top Ribbon */}
+      <div className="top-ribbon">
+        <img src={logo} alt="JNTU-GV Logo" className="jntu-logo" />
+        <div className="university-name">
+          JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY - GURAJADA VIZIANAGARAM 
+        </div>
+      </div>
+
+      {/* Bottom Ribbon */}
+      <div className="bottom-ribbon">
+        <nav className="navbar-links">
+          <ul>
+            <li><Link to="hero" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Home</Link></li>
+            <li><Link to="overview" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Overview</Link></li>
+            <li><Link to="modules" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Modules</Link></li>
+            <li><Link to="practicals" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Practicals</Link></li>
+            <li><Link to="capstone" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Capstone</Link></li>
+            <li><Link to="references" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">References</Link></li>
+            <li><Link to="contact" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Contact</Link></li>
+            <li><Link to="download" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Download</Link></li>
+            <li><Link to="registration" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Registration</Link></li>
+          </ul>
+        </nav>
+      </div>
+      <div className="nav-hero-separator"></div>
     </header>
   );
 }
-over view
-import React from 'react';
 
-export default function Overview() {
-  return (
-    <section id="overview">
-      <h2>Course Overview</h2>
-      <p>This 3-month hybrid course includes 120 sessions on AI, ML, IoT, Cybersecurity, and Quantum Computing with hands-on projects and certification from JNTU-GV.</p>
-      <p><strong>Eligibility:</strong> Open to all graduates (B.Tech, B.A, B.Com, etc.)</p>
-    </section>
-  );
-}
 
-practicals
 import React from 'react';
 
 export default function Practicals() {
+  const tasks = [
+    "Build a Rule-Based Chatbot using Python",
+    "Create a Sentiment Analysis Tool using Scikit-learn",
+    "Train a Logistic Regression Model for Diabetes Prediction",
+    "Develop a CNN for Digit Recognition (MNIST Dataset)",
+    "Customer Segmentation using K-Means Clustering",
+    "Build a Real-Time IoT Dashboard for Temperature Monitoring",
+    "Automate Smart Irrigation System using Soil Moisture Sensor",
+    "Create a Secure Login System using Password Hashing",
+    "Analyze Network Packets using Wireshark",
+    "Perform SQL Injection Demo using DVWA",
+    "Implement Caesar Cipher and Vigenère Cipher in Python",
+    "Train and Evaluate a Random Forest Classifier for Credit Scoring",
+    "Simulate a Quantum Circuit using IBM Qiskit",
+    "Visualize Quantum Superposition using Qiskit’s Statevector Simulator",
+    "Build a Home Automation System (Control Lights via Mobile)",
+    "Time Series Forecasting using LSTM for Stock Prices",
+    "Develop a Face Recognition Attendance System using OpenCV",
+    "Create a Simple Recommender System using Cosine Similarity",
+    "Quantum Random Number Generator using Qiskit",
+    "Capstone Prototype: AI-Based Health Monitoring with IoT Sensors"
+  ];
+
   return (
+    <div className="section-container">
     <section id="practicals">
-      <h2>Practicals</h2>
-      <p>Add list of hands-on projects here (chatbots, CNNs, IoT dashboards, etc.)</p>
+      <h2>Practical Experiments</h2>
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
     </section>
+    </div>
   );
 }
 
-references
+
 import React from 'react';
 
 export default function References() {
+  const references = [
+    {
+      category: 'AI & Tools',
+      resources: [
+        "Artificial Intelligence: A Modern Approach – Russell & Norvig",
+        "OpenAI API Documentation",
+        "IBM Watson Developer Docs"
+      ]
+    },
+    {
+      category: 'Machine Learning & Deep Learning',
+      resources: [
+        "Hands-On Machine Learning – Aurélien Géron",
+        "DeepLearning.ai (Andrew Ng)",
+        "TensorFlow and Keras Official Documentation"
+      ]
+    },
+    {
+      category: 'Internet of Things (IoT)',
+      resources: [
+        "Internet of Things: A Hands-On Approach – Bahga & Madisetti",
+        "Raspberry Pi Official Tutorials",
+        "Arduino Project Hub"
+      ]
+    },
+    {
+      category: 'Cyber Security',
+      resources: [
+        "Computer Security: Principles and Practice – Stallings & Brown",
+        "OWASP Top 10",
+        "MITRE ATT&CK Framework"
+      ]
+    },
+    {
+      category: 'Quantum Computing',
+      resources: [
+        "Quantum Computation and Quantum Information – Nielsen & Chuang",
+        "IBM Qiskit Documentation",
+        "Qiskit Tutorials and GitHub Repository"
+      ]
+    }
+  ];
+
   return (
+    <div className="section-container">
     <section id="references">
       <h2>Recommended References</h2>
-      <p>List of textbooks and online tools used in the course (Qiskit, TensorFlow, OpenAI, etc.)</p>
+      {references.map((ref, index) => (
+        <div key={index} style={{ marginBottom: '30px' }}>
+          <h3>{ref.category}</h3>
+          <ul>
+            {ref.resources.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
+    </div>
   );
-}regisration
+}
+
+
+
 import React from 'react';
 
 export default function Registration() {
   return (
+    <div className="section-container">
     <section id="registration">
       <h2>Registration</h2>
       <p><strong>Fee:</strong> ₹25,000 | ₹20,000 for Women/SC/ST</p>
+      <p><strong>Installment Option:</strong> Fee can be paid in two installments.</p>
       <p><strong>Mode:</strong> Hybrid (Online + Campus Labs)</p>
       <p><strong>Contact:</strong> skill.develop@jntugv.edu.in</p>
       <a href="https://forms.gle/8B8hWybHvdhUNmtt9" target="_blank" rel="noreferrer">
         <button>Register Now</button>
       </a>
     </section>
+    </div>
   );
 }
 
-week plan
+
 
 import React from 'react';
 
@@ -148,5 +410,7 @@ export default function WeekPlan() {
     </section>
   );
 }
+
+
 
 
