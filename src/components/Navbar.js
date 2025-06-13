@@ -25,7 +25,7 @@ export default function Navbar() {
             <li><Link to="capstone" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Capstone</Link></li>
             <li><Link to="references" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">References</Link></li>
             <li><Link to="contact" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Contact</Link></li>
-            <li><Link to="download" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Download</Link></li>
+            <li><Link to="download" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Downloads</Link></li>
             <li><Link to="registration" smooth={true} offset={-80} duration={500} spy={true} activeClass="active">Registration</Link></li>
           </ul>
         </nav>
