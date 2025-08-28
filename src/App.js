@@ -11,6 +11,7 @@ import Contact from './components/Contact.js';
 import Registration from './components/Registration.js';
 import Footer from './components/Footer.js';
 import Download from './components/Download.js';
+import IndividualCourses from './components/IndividualCourses.js';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Capstone />
       <References />
       <Contact/>
+      <IndividualCourses/>
       <Download/>
       <Registration />
       <Footer />
