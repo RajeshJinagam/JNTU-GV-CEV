@@ -14,7 +14,7 @@ export default function Download() {
         <img
           src={require('../assets/Brocheure.jpg')}
           alt="AI Tools"
-          style={{ width: '150px', height: '200px', paddingTop:'20px' }}
+          style={{ width: '200px', height: '250px', padding:'20px' }}
         />
       </div>
     </section>
