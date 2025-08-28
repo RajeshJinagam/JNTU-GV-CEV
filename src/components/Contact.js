@@ -6,9 +6,11 @@ export default function Contact() {
       <p>
         📧 Email: <a href="mailto:skill.develop@jntugv.edu.in">skill.develop@jntugv.edu.in</a><br />
         🌐 Website: <a href="http://www.jntugv.edu.in" target="_blank" rel="noreferrer">www.jntugv.edu.in</a><br />
+        📞 Phone: <a href="tel:+917780351078">+91 7780351078</a><br />
         📍 Location: Jawaharlal Nehru Technological University - Gurajada, Vizianagaram Campus<br />
         💬 For any queries regarding registration, curriculum, or lab sessions, please feel free to reach out.
       </p>
+
     </section>
     </div>
   );
