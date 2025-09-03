@@ -5,7 +5,7 @@ export default function Registration() {
     <div className="section-container">
     <section id="registration">
       <h2>Registration</h2>
-      <p><strong>Fee:</strong> ₹25,000 | ₹20,000 for Women/SC/ST</p>
+      <p><strong>Fee:</strong> ₹20,000 | ₹15,000 for Women/SC/ST</p>
       <p><strong>Installment Option:</strong> Fee can be paid in two installments.</p>
       <p><strong>Mode:</strong> Hybrid (Online + Campus Labs)</p>
       <p><strong>Contact:</strong> skill.develop@jntugv.edu.in</p>
