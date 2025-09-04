@@ -1,5 +1,5 @@
 import React from 'react';
-
+import form from '../assets/form.pdf';
 export default function Hero() {
   return (
     <section className="hero" id="hero">
@@ -13,6 +13,8 @@ export default function Hero() {
         <a href="https://forms.gle/8B8hWybHvdhUNmtt9" target="_blank" rel="noreferrer">
           <button>Register Now</button>
         </a>
+        <br></br>
+          <a href={form} download className="download-btn">Download Application</a>
       </div>
     </section>
   );

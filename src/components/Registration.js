@@ -1,4 +1,5 @@
 import React from 'react';
+import form from '../assets/form.pdf';
 
 export default function Registration() {
   return (
@@ -11,6 +12,8 @@ export default function Registration() {
       <p><strong>Contact:</strong> skill.develop@jntugv.edu.in</p>
       <a href="https://forms.gle/8B8hWybHvdhUNmtt9" target="_blank" rel="noreferrer">
         <button>Register Now</button>
+        <br></br>
+              <a href={form} download className="download-btn">Download Application</a>
       </a>
     </section>
     </div>
